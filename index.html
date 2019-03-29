@@ -74,7 +74,7 @@
     version: '7.0.1',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
-    back2top_sidebar: false,
+    back2top_sidebar: true,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -99,7 +99,7 @@
   <meta name="description" content="学无止境">
 <meta property="og:type" content="website">
 <meta property="og:title" content="于广吉">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://coderabbit.dev/index.html">
 <meta property="og:site_name" content="于广吉">
 <meta property="og:description" content="学无止境">
 <meta property="og:locale" content="zh-CN">
@@ -112,7 +112,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="https://coderabbit.dev/">
 
 
 
@@ -122,7 +122,7 @@
   };
 </script>
 
-  <title>于广吉</title>
+  <title>于广吉 – 请对代码保持足够的好奇心！</title>
   
 
 
@@ -186,6 +186,10 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">请对代码保持足够的好奇心！</h1>
+      
     
     
   </div>
@@ -297,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/27/react-navigation再进阶/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/11/27/react-navigation再进阶/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -314,13 +318,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/11/27/react-navigation再进阶/" class="post-title-link" itemprop="url">react-navigation使用技巧（再进阶）</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -346,6 +350,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 21:49:00" itemprop="dateModified" datetime="2019-03-29T21:49:00+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -360,7 +380,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -378,6 +398,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">12k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">11 分钟</span>
+              
+            </div>
           
 
           
@@ -401,8 +449,8 @@
 <p>本文是基于最新的react-navigation<code>^2.14.2</code>来书写的。</p>
 </blockquote>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>关于<code>react-navigation</code>的文章，这已经是第三篇了，这个库从最初的<code>beta</code>版到最新的<code>2.x</code>版本，更新频率是很快的，这个库也越来越完善，很多<code>1.x</code>的技巧已经完全不适用于新的版本，然而群里每天又有很多人再问，为了解(jiao)决(yu)这个问题，所以，动手写了这篇文章。</p>
-<h2 id="更新版本到react-navigation3-x！"><a href="#更新版本到react-navigation3-x！" class="headerlink" title="更新版本到react-navigation3.x！"></a>更新版本到<code>react-navigation3.x</code>！</h2><blockquote>
-<p>因为<code>react-navigation</code>版本更新啦，本文又一次更新啦！</p>
+<h3 id="更新版本react-navigation3-x！"><a href="#更新版本react-navigation3-x！" class="headerlink" title="更新版本react-navigation3.x！"></a>更新版本<code>react-navigation3.x</code>！</h3><blockquote>
+<p>因为<code>react-navigation</code>版本更新到3.x了！，本文又一次更新啦！</p>
 </blockquote>
 <h3 id="文章链接"><a href="#文章链接" class="headerlink" title="文章链接"></a>文章链接</h3><blockquote>
 <p><a href="https://www.jianshu.com/p/2f575cc35780" target="_blank" rel="noopener">react-navigation使用技巧</a> ： 适合初学者，基本讲解了2.x的api，3.x待更新<br><a href="https://www.jianshu.com/p/b877115fff1b" target="_blank" rel="noopener">react-navigation使用技巧(进阶篇)</a> ： 适合遇到某些问些不知如何解决的人，廉颇老矣，尚能饭否。<br><a href="https://www.jianshu.com/p/dc9df5826651" target="_blank" rel="noopener">react-navigation使用技巧（再进阶）</a> ： 本篇文章，适合对于新版本(2.x，3.x)有疑问的人，对新的Api做了讲解</p>
@@ -440,6 +488,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -447,6 +499,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -470,7 +523,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/18/react-native0.57版本迁移教程/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/09/12/react-navigation使用技巧/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -487,13 +540,427 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/09/12/react-navigation使用技巧/" class="post-title-link" itemprop="url">react-navigation 2.x使用技巧</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-12 15:26:28" itemprop="dateCreated datePublished" datetime="2018-09-12T15:26:28+08:00">2018-09-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 21:52:34" itemprop="dateModified" datetime="2019-03-29T21:52:34+08:00">2019-03-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">18k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">17 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>本文是基于最新的react-navigation<code>^2.9.1</code>来书写的。</p>
+</blockquote>
+<p><strong>如果在学习react-native的过程中遇到什么问题，欢迎加入<a href="//shang.qq.com/wpa/qunwpa?idkey=22a86c4da6efbc7eb0ad38b037d40c21cf3451646fefdef721b50e1edc1adf92">QQ群397885169</a>一起学习，一起成长。</strong></p>
+<p><strong><a href="https://github.com/SurpassRabbit/ShiTu" target="_blank" rel="noopener">识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西</a></strong></p>
+<p><strong>识兔现已重构，完全按照上线项目作为开发标准，使用Mobx<br>管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现</strong></p>
+<p><strong>您的star就是对我最大的帮助</strong></p>
+<p><img src="/images/%E8%AF%86%E5%85%94.gif" alt="识兔"></p>
+<p><strong><a href="http://www.jianshu.com/p/b877115fff1b" target="_blank" rel="noopener">react-navigation使用技巧(进阶篇)</a></strong></p>
+<h2 id="什么是react-navigation"><a href="#什么是react-navigation" class="headerlink" title="什么是react-navigation?"></a>什么是react-navigation?</h2><p><code>react-native</code>从开源至今，一直存在几个无法解决的毛病，偶尔就会复发让人隐隐作痛，提醒你用的不是原生，其中包括列表的复用问题，导航跳转不流畅的问题等等。<br>终于facebook坐不住了，在前一段时间开始推荐使用<code>react-navigation</code>，并且在0.44发布的时将之前一直存在的<code>Navigator</code>废弃了。<br><code>react-navigation</code>是致力于解决导航卡顿，数据传递，Tabbar和navigator布局，支持<code>redux</code>。虽然现在功能还不完善，但基本是可以在项目中推荐使用的。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/09/12/react-navigation使用技巧/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+       <div>
+        
+      </div>
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+   
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2019/03/29/React Hook使用技巧/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CodeRabbit">
+      <meta itemprop="description" content="学无止境">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="于广吉">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/29/React Hook使用技巧/" class="post-title-link" itemprop="url">React Hook使用技巧</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-29 15:20:14 / 修改时间：21:49:00" itemprop="dateCreated datePublished" datetime="2019-03-29T15:20:14+08:00">2019-03-29</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React/" itemprop="url" rel="index"><span itemprop="name">React</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">14</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="React-Hook使用技巧"><a href="#React-Hook使用技巧" class="headerlink" title="React Hook使用技巧"></a>React Hook使用技巧</h1>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+       <div>
+        
+      </div>
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+   
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/09/18/react-native0.57版本迁移教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CodeRabbit">
+      <meta itemprop="description" content="学无止境">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="于广吉">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/09/18/react-native0.57版本迁移教程/" class="post-title-link" itemprop="url">react-native版本迁移教程</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -519,6 +986,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 21:52:34" itemprop="dateModified" datetime="2019-03-29T21:52:34+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -533,7 +1016,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -551,6 +1034,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
+              
+            </div>
           
 
           
@@ -619,6 +1130,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -626,6 +1141,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -649,7 +1165,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/12/react-navigation使用技巧/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/08/14/react-native-router-flux使用技巧（API篇）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -666,185 +1182,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/09/12/react-navigation使用技巧/" class="post-title-link" itemprop="url">react-navigation 2.x使用技巧</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-12 15:26:28" itemprop="dateCreated datePublished" datetime="2018-09-12T15:26:28+08:00">2018-09-12</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>本文是基于最新的react-navigation<code>^2.9.1</code>来书写的。</p>
-</blockquote>
-<p><strong>如果在学习react-native的过程中遇到什么问题，欢迎加入<a href="//shang.qq.com/wpa/qunwpa?idkey=22a86c4da6efbc7eb0ad38b037d40c21cf3451646fefdef721b50e1edc1adf92">QQ群397885169</a>一起学习，一起成长。</strong></p>
-<p><strong><a href="https://github.com/SurpassRabbit/ShiTu" target="_blank" rel="noopener">识兔，一款用来识别图片的开源项目，在未来还会添加更多有意思的东西</a></strong></p>
-<p><strong>识兔现已重构，完全按照上线项目作为开发标准，使用Mobx<br>管理状态，适配iPhoneX和安卓各种异形屏，还有更多有意思的东西等待您的发现</strong></p>
-<p><strong>您的star就是对我最大的帮助</strong></p>
-<p><img src="/images/%E8%AF%86%E5%85%94.gif" alt="识兔"></p>
-<p><strong><a href="http://www.jianshu.com/p/b877115fff1b" target="_blank" rel="noopener">react-navigation使用技巧(进阶篇)</a></strong></p>
-<h2 id="什么是react-navigation"><a href="#什么是react-navigation" class="headerlink" title="什么是react-navigation?"></a>什么是react-navigation?</h2><p><code>react-native</code>从开源至今，一直存在几个无法解决的毛病，偶尔就会复发让人隐隐作痛，提醒你用的不是原生，其中包括列表的复用问题，导航跳转不流畅的问题等等。<br>终于facebook坐不住了，在前一段时间开始推荐使用<code>react-navigation</code>，并且在0.44发布的时将之前一直存在的<code>Navigator</code>废弃了。<br><code>react-navigation</code>是致力于解决导航卡顿，数据传递，Tabbar和navigator布局，支持<code>redux</code>。虽然现在功能还不完善，但基本是可以在项目中推荐使用的。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/09/12/react-navigation使用技巧/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/14/react-native-router-flux使用技巧（API篇）/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CodeRabbit">
-      <meta itemprop="description" content="学无止境">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="于广吉">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/08/14/react-native-router-flux使用技巧（API篇）/" class="post-title-link" itemprop="url">react-native-router-flux使用技巧（API篇）</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -870,6 +1214,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 21:52:34" itemprop="dateModified" datetime="2019-03-29T21:52:34+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -884,7 +1244,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -902,6 +1262,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">10k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">9 分钟</span>
+              
+            </div>
           
 
           
@@ -959,6 +1347,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -966,6 +1358,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -989,7 +1382,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/14/Realm数据库在RN中的使用/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/08/14/Realm数据库在RN中的使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -1006,13 +1399,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/08/14/Realm数据库在RN中的使用/" class="post-title-link" itemprop="url">Realm数据库在RN中的使用</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1038,6 +1431,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 21:52:34" itemprop="dateModified" datetime="2019-03-29T21:52:34+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -1052,7 +1461,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -1070,6 +1479,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">8.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">8 分钟</span>
+              
+            </div>
           
 
           
@@ -1123,6 +1560,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -1130,6 +1571,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -1153,7 +1595,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/react-native中的数据持久化方式/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/08/13/react-native中的数据持久化方式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -1170,13 +1612,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/08/13/react-native中的数据持久化方式/" class="post-title-link" itemprop="url">react-native中的数据持久化方式</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1202,6 +1644,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 21:52:34" itemprop="dateModified" datetime="2019-03-29T21:52:34+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -1216,7 +1674,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -1234,6 +1692,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">4 分钟</span>
+              
+            </div>
           
 
           
@@ -1288,6 +1774,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -1295,6 +1785,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -1318,7 +1809,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/react-native组件的拆分技巧/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/08/13/react-native组件的拆分技巧/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -1335,13 +1826,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/08/13/react-native组件的拆分技巧/" class="post-title-link" itemprop="url">react-native组件的拆分技巧</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1367,6 +1858,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 15:22:27" itemprop="dateModified" datetime="2019-03-29T15:22:27+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -1381,7 +1888,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -1399,6 +1906,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.8k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
+              
+            </div>
           
 
           
@@ -1453,6 +1988,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -1460,6 +1999,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -1483,7 +2023,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/react-native实现上传功能/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/08/13/react-native实现上传功能/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -1500,13 +2040,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/08/13/react-native实现上传功能/" class="post-title-link" itemprop="url">react-native实现上传功能</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1532,6 +2072,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 15:22:27" itemprop="dateModified" datetime="2019-03-29T15:22:27+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -1546,7 +2102,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -1564,6 +2120,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">4 分钟</span>
+              
+            </div>
           
 
           
@@ -1623,6 +2207,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -1630,6 +2218,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -1653,7 +2242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/redux”使用“教程/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/08/13/redux”使用“教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -1670,13 +2259,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2018/08/13/redux”使用“教程/" class="post-title-link" itemprop="url">redux"使用"教程</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1702,6 +2291,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 15:22:06" itemprop="dateModified" datetime="2019-03-29T15:22:06+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -1716,7 +2321,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React/" itemprop="url" rel="index"><span itemprop="name">React</span></a></span>
 
                 
                 
@@ -1734,6 +2339,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">9.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">9 分钟</span>
+              
+            </div>
           
 
           
@@ -1788,6 +2421,10 @@
 
       
 
+       <div>
+        
+      </div>
+
       
 
       
@@ -1795,6 +2432,7 @@
         <div class="post-eof"></div>
       
     </footer>
+   
   </div>
   
   
@@ -1847,7 +2485,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1859,12 +2497,18 @@
                 <div class="site-state-item site-state-categories">
                   
                     
+                      <a href="/categories/">
+                    
+                  
+                    
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -1876,6 +2520,21 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/coderabbityu" title="GitHub &rarr; https://github.com/coderabbityu" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
           
 
           
@@ -1893,6 +2552,13 @@
 
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -1913,7 +2579,25 @@
   <span class="author" itemprop="copyrightHolder">CodeRabbit</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">75k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:08</span>
   
 </div>
 
@@ -1944,11 +2628,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -1995,6 +2674,8 @@
 
 
 
+  
+
 
 
   
@@ -2005,6 +2686,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
 
 
   

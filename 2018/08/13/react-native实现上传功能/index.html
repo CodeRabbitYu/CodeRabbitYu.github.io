@@ -74,7 +74,7 @@
     version: '7.0.1',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
-    back2top_sidebar: false,
+    back2top_sidebar: true,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -99,12 +99,12 @@
   <meta name="description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言在我最新开源的识兔项目中，最重要的功能就是识别图片了，而图片的识别过程如下  选中/拍摄 =&amp;gt; 上传图片 =&amp;gt; 后台返回识别之后的url   第一步中可能遇到的坑，在我另一篇文章有过讲解react-native-image-picker在iOS上闪退的解决办法，如果还有其他">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react-native实现上传功能">
-<meta property="og:url" content="http://yoursite.com/2018/08/13/react-native实现上传功能/index.html">
+<meta property="og:url" content="https://coderabbit.dev/2018/08/13/react-native实现上传功能/index.html">
 <meta property="og:site_name" content="于广吉">
 <meta property="og:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言在我最新开源的识兔项目中，最重要的功能就是识别图片了，而图片的识别过程如下  选中/拍摄 =&amp;gt; 上传图片 =&amp;gt; 后台返回识别之后的url   第一步中可能遇到的坑，在我另一篇文章有过讲解react-native-image-picker在iOS上闪退的解决办法，如果还有其他">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1338142-913e07366f64526d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-08-13T02:17:07.000Z">
+<meta property="og:updated_time" content="2019-03-29T07:22:27.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react-native实现上传功能">
 <meta name="twitter:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言在我最新开源的识兔项目中，最重要的功能就是识别图片了，而图片的识别过程如下  选中/拍摄 =&amp;gt; 上传图片 =&amp;gt; 后台返回识别之后的url   第一步中可能遇到的坑，在我另一篇文章有过讲解react-native-image-picker在iOS上闪退的解决办法，如果还有其他">
@@ -115,7 +115,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/13/react-native实现上传功能/">
+  <link rel="canonical" href="https://coderabbit.dev/2018/08/13/react-native实现上传功能/">
 
 
 
@@ -188,6 +188,10 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">请对代码保持足够的好奇心！</h1>
+      
     
     
   </div>
@@ -293,13 +297,15 @@
   
 
   
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/13/react-native实现上传功能/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/08/13/react-native实现上传功能/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -316,11 +322,11 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">react-native实现上传功能
+          <h2 class="post-title" itemprop="name headline">react-native实现上传功能
 
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -346,6 +352,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 15:22:27" itemprop="dateModified" datetime="2019-03-29T15:22:27+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -360,7 +382,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -378,6 +400,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">4 分钟</span>
+              
+            </div>
           
 
           
@@ -449,6 +499,16 @@
       
       
 
+       <div>
+        
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+        
+      </div>
+
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
@@ -474,6 +534,7 @@
       
       
     </footer>
+   
   </div>
   
   
@@ -536,7 +597,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -548,12 +609,18 @@
                 <div class="site-state-item site-state-categories">
                   
                     
+                      <a href="/categories/">
+                    
+                  
+                    
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -565,6 +632,21 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/coderabbityu" title="GitHub &rarr; https://github.com/coderabbityu" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
           
 
           
@@ -600,6 +682,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -619,7 +708,25 @@
   <span class="author" itemprop="copyrightHolder">CodeRabbit</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">75k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:08</span>
   
 </div>
 
@@ -650,11 +757,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -701,6 +803,8 @@
 
 
 
+  
+
 
 
   
@@ -711,6 +815,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
 
 
   

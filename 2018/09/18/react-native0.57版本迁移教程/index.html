@@ -74,7 +74,7 @@
     version: '7.0.1',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
-    back2top_sidebar: false,
+    back2top_sidebar: true,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -99,24 +99,24 @@
   <meta name="description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言react-native在三天前，也就是2018.9.12号更新了0.57.0版本，这个版本终于正常的兼容了babel7，解决了0.56版本使用mobx等装饰器需要各种配置的问题。 主要更新（合并0.56版本和0.57版本重要的修复） TextInput不能输入中文的问题  TextI">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react-native版本迁移教程">
-<meta property="og:url" content="http://yoursite.com/2018/09/18/react-native0.57版本迁移教程/index.html">
+<meta property="og:url" content="https://coderabbit.dev/2018/09/18/react-native0.57版本迁移教程/index.html">
 <meta property="og:site_name" content="于广吉">
 <meta property="og:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言react-native在三天前，也就是2018.9.12号更新了0.57.0版本，这个版本终于正常的兼容了babel7，解决了0.56版本使用mobx等装饰器需要各种配置的问题。 主要更新（合并0.56版本和0.57版本重要的修复） TextInput不能输入中文的问题  TextI">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/images/%E4%BF%AE%E5%A4%8D%E9%94%99%E8%AF%AF1.jpg">
-<meta property="og:image" content="http://yoursite.com/images/%E4%BF%AE%E5%A4%8D%E9%94%99%E8%AF%AF2.png">
-<meta property="og:updated_time" content="2018-09-18T09:53:33.000Z">
+<meta property="og:image" content="https://coderabbit.dev/images/%E4%BF%AE%E5%A4%8D%E9%94%99%E8%AF%AF1.jpg">
+<meta property="og:image" content="https://coderabbit.dev/images/%E4%BF%AE%E5%A4%8D%E9%94%99%E8%AF%AF2.png">
+<meta property="og:updated_time" content="2019-03-29T13:52:34.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react-native版本迁移教程">
 <meta name="twitter:description" content="如果在学习react-native的过程中遇到什么问题，欢迎加入QQ群397885169一起学习，一起成长。 前言react-native在三天前，也就是2018.9.12号更新了0.57.0版本，这个版本终于正常的兼容了babel7，解决了0.56版本使用mobx等装饰器需要各种配置的问题。 主要更新（合并0.56版本和0.57版本重要的修复） TextInput不能输入中文的问题  TextI">
-<meta name="twitter:image" content="http://yoursite.com/images/%E4%BF%AE%E5%A4%8D%E9%94%99%E8%AF%AF1.jpg">
+<meta name="twitter:image" content="https://coderabbit.dev/images/%E4%BF%AE%E5%A4%8D%E9%94%99%E8%AF%AF1.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/18/react-native0.57版本迁移教程/">
+  <link rel="canonical" href="https://coderabbit.dev/2018/09/18/react-native0.57版本迁移教程/">
 
 
 
@@ -189,6 +189,10 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">请对代码保持足够的好奇心！</h1>
+      
     
     
   </div>
@@ -294,13 +298,15 @@
   
 
   
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/18/react-native0.57版本迁移教程/">
+    <link itemprop="mainEntityOfPage" href="https://coderabbit.dev/2018/09/18/react-native0.57版本迁移教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CodeRabbit">
@@ -317,11 +323,11 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">react-native版本迁移教程
+          <h2 class="post-title" itemprop="name headline">react-native版本迁移教程
 
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -347,6 +353,22 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 21:52:34" itemprop="dateModified" datetime="2019-03-29T21:52:34+08:00">2019-03-29</time>
+              
+            
           </span>
 
           
@@ -361,7 +383,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/react-native/" itemprop="url" rel="index"><span itemprop="name">react-native</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/React-Native/" itemprop="url" rel="index"><span itemprop="name">React-Native</span></a></span>
 
                 
                 
@@ -379,6 +401,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
+              
+            </div>
           
 
           
@@ -476,6 +526,16 @@
       
       
 
+       <div>
+        
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+        
+      </div>
+
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
@@ -501,6 +561,7 @@
       
       
     </footer>
+   
   </div>
   
   
@@ -563,7 +624,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -575,12 +636,18 @@
                 <div class="site-state-item site-state-categories">
                   
                     
+                      <a href="/categories/">
+                    
+                  
+                    
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
-                  
+                  </a>
                 </div>
               
 
@@ -592,6 +659,21 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/coderabbityu" title="GitHub &rarr; https://github.com/coderabbityu" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
           
 
           
@@ -627,6 +709,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -646,7 +735,25 @@
   <span class="author" itemprop="copyrightHolder">CodeRabbit</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">75k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">1:08</span>
   
 </div>
 
@@ -677,11 +784,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -728,6 +830,8 @@
 
 
 
+  
+
 
 
   
@@ -738,6 +842,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
 
 
   
